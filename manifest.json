@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Whatsapp Status Scraper",
+    "description": "Extension By Ali to handle whatsapp status",
+    "version": "1.0",
+    "permissions": [
+      "activeTab",
+      "downloads"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [{
+        "js": ["index.js"],
+        "matches": ["https://web.whatsapp.com/*"]
+    }]
+  }
+  
